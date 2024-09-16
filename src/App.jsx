@@ -153,6 +153,29 @@ function App() {
             </div>
         </div>
     </section>
+    <section id="contatos" className={style.contatos}>
+            <h2>Contatos</h2>
+            <div className={style.contato}>
+                <span>
+                    <img src="../src/assets/o-email.png" alt="icone email"/>
+                    <a href="" type="email">
+                        <h3>milena.calegari.dourado579@gmail.com</h3>
+                    </a>
+                </span>
+                <span>
+                    <img src="../src/assets/linkedin.png" alt="icone linkedin"/>
+                    <a href="https://br.linkedin.com/in/milena-calegari-dourado-027025223"><h3>Milena Calegari Dourado</h3></a>
+                </span>
+                <span>
+                    <img src="../src/assets/github.png" alt="icone github"/>
+                    <a href="https://github.com/milena579"><h3>milena579</h3></a>
+                </span>
+                <span>
+                    <img src="../src/assets/github.png" alt="icone github"/>
+                    <a href="https://github.com/milena579"><h3>milena579</h3></a>
+                </span>
+            </div>
+        </section>
     </>
   )
 }
