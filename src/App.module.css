@@ -134,3 +134,33 @@
     justify-content: center;
     line-height: 5vh;
 }
+
+.experiencia{
+    background-color: var(--fundoExperiencia);
+    color: var(--corFonte);
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+}
+
+.empresa{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 50%;
+    background-color: var(--fundoVioleta);
+    border-radius: 30px;
+    padding: 15px;
+}
+
+.empresa summary{
+    font-size: larger;
+    font-weight: 400;
+}
+
+.empresa p{
+    margin: 10px;
+}

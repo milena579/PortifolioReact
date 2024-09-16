@@ -11,7 +11,7 @@ function App() {
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#sobremim">Sobre Mim</a></li>
-                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experiencia">Experiencia</a></li>
                 <li><a href="#projetos">Projetos</a></li>
                 <li><a href="#contatos">Contato</a></li>
             </ul>
@@ -88,6 +88,31 @@ function App() {
                     </ul>     
                 </div>
             </div>
+      </section>
+
+      <section className={style.experiencia} id='experiencia'>
+          <h1>Experiencias</h1>
+
+          <details className={style.empresa}>
+            <summary>Bosch</summary>
+            <p>Aprendiz soluções digitais</p>
+            <p>Desenvolvimento de habilidades na área de T.I e trabalho em equipe</p>
+            <p>Data de início: 05/02/2024 até Atualmente</p>
+          </details>
+
+          <details className={style.empresa}>
+            <summary>Grupo Barigui</summary>
+            <p>Auxiliar de TI</p>
+            <p>Auxilio em tasks</p>
+            <p>Data de início: JUL/2022 até JAN/2024</p>
+          </details>
+
+          <details className={style.empresa}>
+            <summary>Fundação de Ação Social - FAS</summary>
+            <p>Aprendiz administrativo</p>
+            <p>Desenvolvimento de habilidades na área de T.I e trabalho em equipe</p>
+            <p>Data de início: JAN/2021 até FEV/2022</p>
+          </details>
       </section>
     </main>
     </>
