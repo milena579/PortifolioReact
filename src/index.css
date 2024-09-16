@@ -1,5 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
 :root {
-  
-  
+  --fundoEscuro: rgb(24, 22, 32);
+  --fundoMenu:  rgb(34, 24, 34);
+  --fundoVioleta:  blueviolet;
+  --corLogo:  rgb(218, 188, 247);
+  --fonte: "Ubuntu", sans-serif;
+  --corMenu: #9e64ca;
+  --corBordaMenu: #3e2f74;
+  --corFonte: white;
 }
 
+*{
+  font-family: var(--fonte);
+  scroll-behavior: smooth;
+}
+
+header{
+  background-color: var(--fundoMenu);
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+
+nav{
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
+nav ul{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+nav h1{
+  color: var(--corLogo);
+}
+
+li{
+ list-style-type: none;
+}
+
+a{
+  text-decoration: none;
+  color: var(--corFonte);
+  font-size: 20px;
+  font-weight: 500;
+}
+
+nav a:hover{
+  border-bottom: var(--corBordaMenu) solid 2px;
+  transition: all 200ms ease-in;
+  transform: scale(1.1);
+  color: var(--corMenu);
+}
