@@ -146,21 +146,72 @@
     gap: 15px;
 }
 
-.empresa{
+.empresas{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 50%;
+    width: 100%;
+    justify-content: center;
+    padding: 30px;
+}
+
+.empresa, .empresa2, .empresa3{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     background-color: var(--fundoVioleta);
     border-radius: 30px;
     padding: 15px;
-}
-
-.empresa summary{
-    font-size: larger;
-    font-weight: 400;
-}
-
-.empresa p{
     margin: 10px;
+    font-size: larger;
+}
+
+.empresa, .empresa2, .empresa3, p{
+    margin: 10px;
+}
+
+.projetos{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--fundoEscuro);
+    color: var(--corFonte);
+}
+
+.galeria{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 10px;
+    justify-content: center;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    border: solid 1px var(--fundoVioleta);
+    padding: 15px;
+    border-radius: 10px;
+    max-width: 25%;
+    gap: 10px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.card:hover{
+    opacity: 50%;
+    transition: all 200ms ease-in;
+    transform: scale(1.1);
+}
+
+.card a{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }

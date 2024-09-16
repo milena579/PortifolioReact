@@ -93,28 +93,66 @@ function App() {
       <section className={style.experiencia} id='experiencia'>
           <h1>Experiencias</h1>
 
-          <details className={style.empresa}>
-            <summary>Bosch</summary>
-            <p>Aprendiz soluções digitais</p>
-            <p>Desenvolvimento de habilidades na área de T.I e trabalho em equipe</p>
-            <p>Data de início: 05/02/2024 até Atualmente</p>
-          </details>
+          <div className={style.empresas}>
+            <div style={{width:'400px', height:'auto'}}>
+            <details className={style.empresa}>
+              <summary><b>Bosch</b></summary>
+              <p>Aprendiz soluções digitais</p>
+              <p>Desenvolvimento de habilidades na área de T.I e trabalho em equipe</p>
+              <p>Data de início: 05/02/2024 até Atualmente</p>
+            </details>
+            </div>
 
-          <details className={style.empresa}>
-            <summary>Grupo Barigui</summary>
-            <p>Auxiliar de TI</p>
-            <p>Auxilio em tasks</p>
-            <p>Data de início: JUL/2022 até JAN/2024</p>
-          </details>
+            <div style={{width:'400px', height:'auto'}}>
+              <details className={style.empresa2}>
+                <summary><b>Grupo Barigui</b></summary>
+                <p>Auxiliar de TI</p>
+                <p>Auxilio em tasks</p>
+                <p>Data de início: JUL/2022 até JAN/2024</p>
+              </details>
+            </div>
 
-          <details className={style.empresa}>
-            <summary>Fundação de Ação Social - FAS</summary>
-            <p>Aprendiz administrativo</p>
-            <p>Desenvolvimento de habilidades na área de T.I e trabalho em equipe</p>
-            <p>Data de início: JAN/2021 até FEV/2022</p>
-          </details>
+            <div style={{width:'400px', height:'auto'}}>
+                <details className={style.empresa3}>
+                  <summary><b>Fundação de Ação Social - FAS</b></summary>
+                  <p>Aprendiz administrativo</p>
+                  <p>Desenvolvimento de habilidades na área de T.I e trabalho em equipe</p>
+                  <p>Data de início: JAN/2021 até FEV/2022</p>
+                </details>
+            </div>
+          </div>
       </section>
     </main>
+    <section className={style.projetos} id='projetos'>
+        <h1>Projetos</h1>
+        <div className={style.galeria}>
+            <div className={style.card}>
+                <a href="https://github.com/milena579/projetoSenai">
+                    <h3>Projeto Senai</h3>
+                    <p>
+                        Projeto desenvolvido em aula do curso técnico de desenvolvimento de sistemas com intuito de elaborar um sistema simples.
+                    </p>
+                </a>
+            </div>
+            <div className={style.card}>
+                <a href="https://github.com/milena579/Projeto-Final-IoT">
+                    <h3>Projeto final de Iot</h3>
+                    <p>
+                        Projeto de IOT feito em aula do curso técnico de desenvolvimento de sistemas com iot em elaborção de um alimentador de pets funcional
+                    </p>
+                </a>
+            </div>
+            <div className={style.card}>
+                <a href="https://github.com/JuanoneD/Sistema_Gestao_Empresa">
+                    <h3>Projeto final C</h3>
+                    <p>
+                        Projeto final da matéria de linguagem C do curso técnico em desenvolvimento de sistemas.
+                        O projeto se consiste em uma necessidade do mercado de um sistema em uma confeitaria que possuia problemas de gestão.
+                    </p>
+                </a>
+            </div>
+        </div>
+    </section>
     </>
   )
 }
