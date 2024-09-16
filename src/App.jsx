@@ -17,6 +17,19 @@ function App() {
             </ul>
         </nav>
     </header>   
+    <main>
+      <section className={style.home} id='home' >
+            <div className={style.picme}>
+                <img src="../src/assets/programacao.png" alt=""/>
+            </div>
+
+            <div className={style.texthome}>
+                <h3>Olá meu nome é</h3>
+                <h3 id="nome"> Milena Calegari Dourado</h3>
+                <input type="button" value="Download CV"/>
+            </div>
+      </section>
+    </main>
     </>
   )
 }

@@ -19,6 +19,7 @@
 header{
   background-color: var(--fundoMenu);
   width: 100%;
+  flex-wrap: wrap;
   position: fixed;
   top: 0;
 }
