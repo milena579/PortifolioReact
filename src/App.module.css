@@ -7,7 +7,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     height: 95vh;
-    background-color: var(--fundoEscuro);
+    background-color: var(--fundoHome);
 }
 .picme{
     display: flex;
@@ -58,4 +58,79 @@
     opacity: 50%;
     transition: all 200ms ease-in;
     transform: scale(1.1);
+}
+
+.nome{
+    color: var(--fundoVioleta);
+}
+
+.sobremim{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 40px;
+    gap: 20px;
+    align-items: center;
+    min-height: 95vh;
+    background-color: var(--fundoEscuro);
+    color: var(--corFonte);
+}
+
+.pessoal{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 15px;
+    max-height: 50%;
+}
+
+.textsobre{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding: 20px;
+    gap: 20px;
+    align-items: center;
+    font-size: 2vh;
+}
+
+.textsobre p {
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+    line-height: 5vh;
+}
+.pessoal img{
+    border-radius: 50%;
+    border: solid 1px var(--fundoVioleta);
+    max-width: 30%;
+}   
+
+.academico{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+
+}
+
+.cardacademico{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 25%;
+    padding: 20px;
+    gap: 10px;
+    border: solid 1px var(--corFonte);
+    border-radius: 15px;
+}
+
+.cardacademico li {
+    font-size: 1vw;
+    display: flex;
+    justify-content: center;
+    line-height: 5vh;
 }
