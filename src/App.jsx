@@ -1,7 +1,13 @@
-import style from './App.module.css'
-
+import style from './App.module.css';
 function App() {
   //const [count, setCount] = useState(0)
+
+    const defaultPhoneNumber = "5541999999999"
+
+    const conversar = () => {
+        const urlZAPZAP = `https://api.whatsapp.com/send?phone=${defaultPhoneNumber}&text= Olá vim pelo seu currículo!`
+        window.open(urlZAPZAP, '_blank')
+    }
 
   return (
     <>
@@ -171,8 +177,8 @@ function App() {
                     <a href="https://github.com/milena579"><h3>milena579</h3></a>
                 </span>
                 <span>
-                    <img src="../src/assets/github.png" alt="icone github"/>
-                    <a href="https://github.com/milena579"><h3>milena579</h3></a>
+                    <img src="../src/assets/whatssapp-big-logo.png" alt="icone github" style={{width:'35px'}}/>
+                    <a onClick={conversar}><h3>WhatsApp</h3></a>
                 </span>
             </div>
         </section>
