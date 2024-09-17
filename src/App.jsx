@@ -1,4 +1,14 @@
 import style from './App.module.css';
+import programacao from '../src/assets/programacao.png';
+import eu from '../src/assets/picme.png';
+import escola from '../src/assets/escola.png';
+import aluno from '../src/assets/aluno.png';
+import diploma from '../src/assets/diplomado.png';
+import whats from '../src/assets/whatssapp-big-logo.png';
+import git from '../src/assets/github.png';
+import linkedin from '../src/assets/linkedin.png';
+import email from '../src/assets/o-email.png';
+
 function App() {
   //const [count, setCount] = useState(0)
 
@@ -26,7 +36,7 @@ function App() {
     <main>
       <section className={style.home} id='home' >
             <div className={style.picme}>
-                <img src="../src/assets/programacao.png" alt=""/>
+                <img src={programacao} alt=""/>
             </div>
 
             <div className={style.texthome}>
@@ -46,12 +56,12 @@ function App() {
                         aprender cada vez mais e melhorar a cada dia, para que futuramente possa me tornar uma profissional influente no mundo da tecnologia.
                     </p>
                 </div>
-                <img src="../src/assets/picme.png" alt="" />
+                <img src={eu} alt="" />
             </div>
             <h1>Acadêmico</h1>
             <div className={style.academico}>
                 <div className={style.cardacademico}>
-                    <img src="../src/assets/escola.png" alt=""/>
+                    <img src={escola} alt=""/>
                     <ul>
                         <li>
                             Ensino Médio Técnico em Eletrônica - CEEP Curitiba
@@ -66,7 +76,7 @@ function App() {
                     
                 </div>
                 <div className={style.cardacademico}>
-                    <img src="../src/assets/aluno.png" alt=""/>
+                    <img src={aluno} alt=""/>
                     <ul>
                         <li>
                             Técnico em Desenvolvimento de Sistemas - Senai Curitiba
@@ -80,7 +90,7 @@ function App() {
                     </ul>
                 </div>
                 <div className={style.cardacademico}>
-                    <img src="../src/assets/diplomado.png" alt=""/>
+                    <img src={diploma} alt=""/>
                     <ul>
                         <li>
                             Superior em Análise e Desenvolvimento de Sistemas -  UFPR 
@@ -163,21 +173,21 @@ function App() {
             <h2>Contatos</h2>
             <div className={style.contato}>
                 <span>
-                    <img src="../src/assets/o-email.png" alt="icone email"/>
+                    <img src={email} alt="icone email"/>
                     <a href="" type="email">
                         <h3>milena.calegari.dourado579@gmail.com</h3>
                     </a>
                 </span>
                 <span>
-                    <img src="../src/assets/linkedin.png" alt="icone linkedin"/>
+                    <img src={linkedin} alt="icone linkedin"/>
                     <a href="https://br.linkedin.com/in/milena-calegari-dourado-027025223"><h3>Milena Calegari Dourado</h3></a>
                 </span>
                 <span>
-                    <img src="../src/assets/github.png" alt="icone github"/>
+                    <img src={git} alt="icone github"/>
                     <a href="https://github.com/milena579"><h3>milena579</h3></a>
                 </span>
                 <span>
-                    <img src="../src/assets/whatssapp-big-logo.png" alt="icone github" style={{width:'35px'}}/>
+                    <img src={whats} alt="icone github" style={{width:'35px'}}/>
                     <a onClick={conversar}><h3>WhatsApp</h3></a>
                 </span>
             </div>
