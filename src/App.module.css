@@ -1,36 +1,35 @@
-*{
-    margin: 0;
-}
 
 .home{
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     height: 95vh;
+    width: 100%;
     background-color: var(--fundoHome);
+    align-items: center;
+    justify-content: center;
 }
+
 .picme{
     display: flex;
-    width:40%;
+    width:50%;
     background-color: var(--fundoVioleta);
     justify-content: center;
-    padding: 20px;
     align-items: center;
+    height: 100%;
 }
-
-.picme img{
-    width: 300px;
-}
-
 .texthome{
+    width: 50%;
     display: flex;
     justify-content: center;
     color: var(--corFonte);
-    font-size: 40px;
     flex-direction: column;
     align-items: center;
-    min-width: 50%;
-    padding: 50px;
+    font-size: 4vh;
+}
+
+.picme img{
+    max-width: 20vw;
+    height: auto;
 }
 
 .texthome h3{
@@ -40,10 +39,10 @@
 }
 
 .texthome input{
+    background-color: transparent;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(45deg, blueviolet, rgb(238, 139, 156), rgb(47, 5, 87));
     padding: 10px;
     border-radius: 15px;
     width: 50%;
@@ -52,12 +51,13 @@
     cursor: pointer;
     font-weight: 600;
     border: none;
+    border: solid 1px var(--fundoVioleta);
+    color: white;
 }
 
 .texthome input:hover{
-    opacity: 50%;
-    transition: all 200ms ease-in;
-    transform: scale(1.1);
+    background: linear-gradient(45deg, blueviolet, rgb(238, 139, 156), rgb(47, 5, 87));
+    border: none;
 }
 
 .nome{
@@ -91,7 +91,7 @@
     padding: 20px;
     gap: 20px;
     align-items: center;
-    font-size: 2vh;
+    font-size: large;
 }
 
 .textsobre p {
@@ -129,10 +129,12 @@
 }
 
 .cardacademico li {
-    font-size: 1vw;
     display: flex;
     justify-content: center;
-    line-height: 5vh;
+}
+.cardacademico img {
+    max-width: 15vw;
+    height: auto;
 }
 
 .experiencia{
@@ -198,7 +200,7 @@
     border: solid 1px var(--fundoVioleta);
     padding: 15px;
     border-radius: 10px;
-    max-width: 25%;
+    width: 35%;
     gap: 10px;
     margin: 10px;
     cursor: pointer;
@@ -215,6 +217,7 @@
     flex-direction: column;
     gap: 15px;
 }
+
 
 .contatos{
     color: var(--corFonte);
@@ -234,6 +237,7 @@
     justify-content: space-around;
     width: 100%;
     min-height: 40vh;
+    padding: 5px;
 }
 
 .contato span{
@@ -249,4 +253,63 @@
     cursor: pointer;
     border-bottom: var(--fundoVioleta) solid 2px;
     transition: all 200ms ease-in;
+}
+
+@media (width < 580px){
+    .contato a{
+        font-size: small;
+    }
+    .textsobre p{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+}
+
+@media (width < 800px){
+    .galeria{
+        .texthome{
+            font-size: x-small;
+        }
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .card{
+        width: 80%;
+    }
+    .cardacademico{
+        width: 70%;
+        
+    }
+    .cardacademico ul{
+        width: 100%;
+        font-size: medium;
+    }
+    .textsobre{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .textsobre p{
+        display: flex;
+        flex-direction: row;
+    }
+    .home{
+        height: 70vh;
+    }
+    
+}
+@media (width < 1100px){
+    .sobremim img{
+        max-width: 40%;
+        height: auto;
+    }
+    .pessoal{
+        justify-content: center;
+        align-items: center;
+    }
+    .texthome{
+        font-size: large;
+    }
 }

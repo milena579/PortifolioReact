@@ -36,7 +36,7 @@ function App() {
             </div>
       </section>
       <section className={style.sobremim} id='sobremim'>
-                    <div className={style.pessoal}>
+            <div className={style.pessoal}>
                 <div className={style.textsobre}>
                     <h1>Quem sou eu?</h1>
                     <p> 
@@ -46,7 +46,7 @@ function App() {
                         aprender cada vez mais e melhorar a cada dia, para que futuramente possa me tornar uma profissional influente no mundo da tecnologia.
                     </p>
                 </div>
-                <img src="../src/assets/picme.png" alt=""/>
+                <img src="../src/assets/picme.png" alt="" />
             </div>
             <h1>Acadêmico</h1>
             <div className={style.academico}>
